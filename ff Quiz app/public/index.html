@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body  onload="nextQuestion()">
+  
+  <div class="main">   
+    <div>
+   <h1>Quiz Application </h1>
+  <p id="timer">2:00</p>
+ </div>
+    
+    <div>
+      <p id="ques"></p>
+      
+
+
+ <div id="opts4" class="opt">
+ 
+  <input onclick="clicked()" type="radio"  value="1" name="options" id="chk" >
+  &nbsp;
+  <label id="opt1" for="chk" ></label>
+
+ </div>
+ 
+
+   <div id="opts4" class="opt">
+   
+   <div class="box">
+    <input onclick="clicked()" type="radio"  value="2" name="options" id="chk1" >
+    <label id="opt2" for="chk1" ></label></div>
+
+  
+
+  </div>
+    <div id="opts4" class="opt">
+      
+      <input onclick="clicked()" type="radio"  value="3" name="options" id="chk2" >
+      &nbsp;
+    <label id="opt3" for="chk2" ></label>
+    </div>
+
+    
+   <br><br><br><br><hr style="border: 2px solid blue;" width="100%"><br><br>
+
+    <button id="btn"  disabled onclick="nextQuestion()" >Next</button><br><br>
+   <br><br> 
+   </div>
+ 
+  </div>
+ 
+
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
